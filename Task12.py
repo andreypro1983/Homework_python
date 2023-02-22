@@ -12,8 +12,8 @@
 s=int(input('Введите сумму загаданных чисел: '))
 p=int(input('Введите произведение загаданных чисел: '))
 is_end=False
-for i in range(0,3000):
-    for j in range (0,3000):
+for i in range(1001):
+    for j in range (1001):
         if i+j==s and i*j==p:
             print (i,j)
             is_end=True
