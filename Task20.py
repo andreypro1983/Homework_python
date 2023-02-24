@@ -57,7 +57,7 @@ alphabet_ru = {'А': 1, 'В': 1, 'Е': 1, 'И': 1, 'Н': 1, 'О': 1, 'Р': 1, '�
                }
 
 
-def cost_work(word, alphabet) -> int:
+def cost_word(word, alphabet) -> int:
     cost = 0
     for letter in word:
         cost += alphabet[letter]
@@ -66,8 +66,8 @@ def cost_work(word, alphabet) -> int:
 
 word = (input('Введите исходное слово: ')).upper()
 if word[0] in alphabet_en:
-    print(cost_work(word, alphabet_en))
+    print(cost_word(word, alphabet_en))
 elif word[0] in alphabet_ru:
-    print(cost_work(word, alphabet_ru))
+    print(cost_word(word, alphabet_ru))
 else:
     print('Введены недопустимые символы')
